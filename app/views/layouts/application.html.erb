@@ -9,6 +9,8 @@
   </head>
 
   <body>
+    <%= link_to "LOGOUT", logout_path, method: :delete %>
+    <%= link_to "REGISTER", register_path %>
     <% if flash[:error]%>
     <% flash[:error].each do |error|%>
     <h3><%=error%></h3>

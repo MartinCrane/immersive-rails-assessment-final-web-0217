@@ -1,4 +1,7 @@
 class AppearancesController < ApplicationController
+  before_action :set_appearance, only: [:show, :edit, :update, :destroy]
+
+
 
   def new
     @appearance = Appearance.new
@@ -16,15 +19,12 @@ class AppearancesController < ApplicationController
   end
 
   def show
-    set_appearance
   end
 
   def edit
-    set_appearance
   end
 
   def update
-    set_appearance
     if  @appearance.update(appearance_params)
       redirect_to @appearance
     else
@@ -34,8 +34,6 @@ class AppearancesController < ApplicationController
   end
 
   def destroy
-
-    set_appearance
     @appearance.destroy
     redirect_to new_appearance_path
   end

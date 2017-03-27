@@ -4,7 +4,10 @@
 + producer association (user foreign_key)
 + form partials
 + show, edit, update, delete Appearance route
-
++ show appearance from guest view
++ register function
++ delete appearance
++ logout function
 #==================================================
 
 # Rails Assessment

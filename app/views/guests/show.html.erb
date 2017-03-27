@@ -2,3 +2,7 @@
 
 <h3><%= @guest.occupation %></h3>
 
+<h1>Appearances</h1>
+<% @guest.appearances.each do |f|%>
+<h4>Date: <%= link_to f.episode.date, appearance_path(f)%></h4>
+<%end  %>

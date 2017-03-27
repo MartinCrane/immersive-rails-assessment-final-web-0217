@@ -4,10 +4,12 @@ Rails.application.routes.draw do
   resources :episodes, only: [:index, :show]
   resources :appearances, only: [:new, :create, :edit, :update, :show, :destroy]
 
-  root 'static#home'
+
+  root 'sessions#new'
 
   get '/login', to: 'sessions#new', as: 'login'
-  post '/logout', to: 'sessions#destroy', as: 'logout'
+  delete '/logout', to: 'sessions#destroy', as: 'logout'
   post '/sessions', to: 'sessions#create', as: 'sessions'
-  get '/register', to: 'user#new', as: 'register'
+  get '/register', to: 'users#new', as: 'register'
+  post '/users', to: 'users#create'
 end
