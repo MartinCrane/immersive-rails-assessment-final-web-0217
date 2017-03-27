@@ -1,11 +1,11 @@
 #MartinCrane ADDED FEATURES ========================================
 
-+ edit form
++ edit appearance form
 + producer association (user foreign_key)
-+ form partials
++ apperance form partials
 + show, edit, update, delete Appearance route
-+ show appearance from guest view
-+ register function
++ show appearance from guests view
++ user register function
 + delete appearance
 + logout function
 +
