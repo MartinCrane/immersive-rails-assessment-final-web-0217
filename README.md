@@ -1,4 +1,4 @@
-#MC ADEED ========================================
+#MartinCrane ADDED FEATURES ========================================
 
 + edit form
 + producer association (user foreign_key)
@@ -8,6 +8,7 @@
 + register function
 + delete appearance
 + logout function
++
 #==================================================
 
 # Rails Assessment
