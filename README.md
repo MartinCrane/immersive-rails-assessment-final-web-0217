@@ -1,3 +1,12 @@
+#MC ADEED ========================================
+
++ edit form
++ producer association (user foreign_key)
++ form partials
++ show, edit, update, delete Appearance route
+
+#==================================================
+
 # Rails Assessment
 
 It's time to put our Rails know-how to the test. Today, we have an basic new application.

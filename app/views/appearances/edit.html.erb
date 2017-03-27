@@ -1,0 +1,4 @@
+<%= render partial: 'form', locals:{appearance: @appearance} %> <br />
+
++Uh, Oh, Delete This Appearance:<br />
+<%= button_to 'Delete Appearance', appearance_path, :method => :delete, class: 'submit'%>
